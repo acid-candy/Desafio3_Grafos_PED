@@ -1,0 +1,20 @@
+ANÁLISIS DE RESULTADOS
+======================
+
+1. Estructura utilizada
+El proyecto usa un grafo implementado con listas de adyacencia. La clase CGrafo contiene la lista de vértices y cada CVertice contiene una lista de objetos CArco.
+
+2. Relación con el problema
+Cada CVertice representa un municipio del departamento de San Vicente. Cada CArco representa un camino entre dos municipios y su atributo peso representa la distancia aproximada en kilómetros.
+
+3. Recorrido en anchura (BFS)
+El método RecorridoAnchura usa una cola para visitar primero los vecinos más cercanos al nodo inicial. La interfaz va coloreando los nodos y aristas conforme avanza.
+
+4. Recorrido en profundidad (DFS)
+El método RecorridoProfundidad usa recursividad para avanzar lo más profundo posible por cada rama del grafo. La interfaz muestra el orden de visita paso a paso.
+
+5. Ruta más corta
+El método Dijkstra calcula la distancia mínima desde un municipio origen hasta un destino usando pesos no negativos. La ruta se reconstruye con el atributo Padre de cada vértice y se muestra con el peso total.
+
+6. Mejora solicitada en la guía 13
+La ruta más corta no se muestra de una sola vez: se anima tramo por tramo y se muestra el costo parcial de cada movimiento. Además, el botón "Rutas desde origen" calcula la ruta mínima desde un municipio hacia todos los municipios alcanzables.
